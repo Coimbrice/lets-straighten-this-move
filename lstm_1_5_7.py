@@ -221,6 +221,9 @@ plt.ylabel('Frequência')
 plt.axvline(x=peak_bin, color='r', linestyle='--', label=f'Limiar no Pico: {peak_bin:.3f}')
 plt.legend()
 
+# Salvar histograma de treino
+plt.savefig('histograma_erros_reconstrucao.png')
+
 plt.show()
 
 # Atualizar o limiar de detecção de anomalias para o valor do pico
